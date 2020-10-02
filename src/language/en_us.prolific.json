@@ -1,0 +1,8 @@
+{
+    "userid": {
+        "set": "Collecting your Prolific ID..."
+    },
+    "instructions": {
+        "points_to_bonus_conversion": "For every <span class='text-large'><b>45 points</b></span> that you win in the game, you will get <span class='text-large'><b>$1</b></span> at the end of the experiment."
+    }
+}

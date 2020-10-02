@@ -85,10 +85,13 @@ const PHOTODIODE_ON = false;
 
 // get language file
 const lang = require("../language/en_us.json");
-// note: prolific lang is lumped in with en_us.json
+// note: prolific lang is currently lumped in with en_us.json
+// if mturk or prolific, merge in specific language
 if (MTURK) {
-  // if this is mturk, merge in the mturk specific language
   const mlang = require("../language/en_us.mturk.json");
+  _.merge(lang, mlang);
+} else if (PROLIFIC) {
+  const mlang = require("../language/en_us.prolific.json");
   _.merge(lang, mlang);
 }
 
