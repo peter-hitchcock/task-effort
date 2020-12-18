@@ -12,6 +12,10 @@
 /build
 /dist
 
+# firebase keys
+data_extraction/keys*
+
+
 # misc
 .DS_Store
 .env*
